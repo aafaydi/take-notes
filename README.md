@@ -14,9 +14,9 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Credits](#credits)
 - [License](#license)
 
-![image](Screen Shot 2021-04-09 at 5.54.30 AM.png)
 
-![image](Screen Shot 2021-04-09 at 5.55.20 AM.png)
+
+
 
 ## Prerequisites: 
 
