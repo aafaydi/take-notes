@@ -1,9 +1,9 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const fs = require('fs');
-const uuidv1 = require('uuid');
+const { v1 } = require('uuid');
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 3001;
 const path = require('path');
 const app = express();
 
@@ -32,7 +32,7 @@ app.post('/api/notes', (req, res) => {
     let note = {
       title: req.body.title,
       text: req.body.text,
-      id: uuidv1()
+      id: v1()
     }
     json.push(note);
 
@@ -67,4 +67,6 @@ app.delete('/api/notes/:id', (req, res) => {
   });
 })
 
-app.listen(PORT);
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
+});
